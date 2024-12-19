@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-color: #bab7b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.title-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.display {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #e6e6e6;
+    background: #303131;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+.controls button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Start/Resume Button */
+.start {
+    background-color: #016318;
+}
+
+.start:hover {
+    background-color: #013b0e;
+}
+
+/* Stop Button */
+.stop {
+    background-color: #8a6801;
+}
+
+.stop:hover {
+    background-color: #5f4700;
+}
+
+/* Reset Button */
+.reset {
+    background-color: #6d000b;
+}
+
+.reset:hover {
+    background-color: #530009;
+}
+
+/* Lap Button */
+.lap {
+    background-color: #014289;
+}
+
+.lap:hover {
+    background-color: #003166;
+}
+/* Disabled Button (Lap before Start) */
+button:disabled {
+    background-color: #cccccc; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Show disabled cursor */
+    color: #666666; /* Gray text */
+}
+
+/* Laps Section Styling */
+.laps {
+    margin-top: 15px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.laps h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #332424;
+    padding-bottom: 5px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; 
+    overflow-y: auto; 
+    border: 1px solid #2e2d2d; 
+    border-radius: 10px;
+    background: #989191;
+}
+
+.laps li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    background: #353131;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fcfcfc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.laps li:hover {
+    transform: translateY(-2px);
+}
+
